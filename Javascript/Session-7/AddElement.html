@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function createPara() {
+        var p1Ref = document.getElementById("p1");
+        console.log(p1Ref);
+        if (p1Ref != null) {
+          p1Ref.remove();
+        }
+
+        var pRef = document.createElement("p");
+        pRef.innerText = "p element is created using Javascript";
+
+        document.getElementById("container").appendChild(pRef);
+      }
+
+      function changeStyle() {
+        document.querySelector("button").style.color = "red";
+        document.querySelector("button").style.padding = "12px 40px";
+      }
+
+      function defaultStyle() {
+        document.querySelector("button").style.color = "black";
+        document.querySelector("button").style.padding = "10px";
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container" style="text-align: center; margin-top: 100px">
+      <h2>Add New Element</h2>
+      <p id="p1">Need to remove</p>
+      <button
+        onclick="createPara()"
+        onmouseenter="changeStyle()"
+        onmouseleave="defaultStyle()"
+      >
+        Add
+      </button>
+    </div>
+  </body>
+</html>

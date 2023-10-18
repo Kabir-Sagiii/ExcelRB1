@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var obj1 = {
+        c: 100,
+      };
+
+      var obj2 = {
+        c: 500,
+      };
+      function fnAdd(a, b) {
+        console.log(a + b + this.c); // window.c  //NaN
+      }
+
+      fnAdd(10, 20); // c = obj1
+
+      fnAdd(100, 200); // c = obj2
+    </script>
+  </head>
+  <body></body>
+</html>

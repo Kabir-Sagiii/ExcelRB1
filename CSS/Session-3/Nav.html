@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+
+        height: 70px;
+        background-color: black;
+      }
+      .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 100%;
+      }
+      .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+      }
+      h2,
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a {
+        margin-right: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <h2>My-Site-Navbar</h2>
+      </div>
+
+      <div class="right">
+        <a href="#">Home</a>
+        <a href="#">Profile</a>
+        <a href="#">Products</a>
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </body>
+</html>

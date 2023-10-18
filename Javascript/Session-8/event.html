@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      var data = "";
+      function f1(e) {
+        console.log(e.target);
+        var btnRef = e.target;
+        btnRef.style.color = "green";
+
+        var p1Ref = document.querySelector("#p1");
+        p1Ref.innerText = data;
+      }
+
+      function getdata(eventObj) {
+        eventObj.target.style.borderColor = "red";
+
+        data = eventObj.target.value;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Event Object</h2>
+    <input
+      type="text"
+      placeholder="Enter Something"
+      onkeydown="getdata(event)"
+    />
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum tenetur
+      commodi consequuntur! Commodi velit quibusdam minima quo quos, sint
+      consectetur sapiente labore accusamus vitae debitis praesentium alias
+      repellat sit aspernatur. Expedita sit non facere. Ad blanditiis culpa ipsa
+      excepturi distinctio, nesciunt dolorum necessitatibus omnis nobis in
+      corrupti adipisci maxime odit placeat repellendus maiores ea sapiente
+      similique laboriosam magnam mollitia ex harum autem tenetur. Sit iure
+      iusto fugit laborum fuga repellat aliquam rem, quibusdam libero, ipsum
+      labore! Veniam alias dignissimos non eius nam earum laborum modi! Ipsa
+      obcaecati provident nihil commodi sit voluptates ipsum odit laudantium,
+      perspiciatis et, iusto nostrum necessitatibus.
+    </p>
+    <button onclick="f1(event)">Event Object</button>
+    <p id="p1"></p>
+  </body>
+</html>

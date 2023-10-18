@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Eventbubbling.css" />
+  </head>
+  <body>
+    <div class="Gparent">
+      <div class="parent">
+        <div class="child">
+          <button onclick="f1()">Click me</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function f1() {
+        alert("button is called");
+        var childRef = document.getElementsByClassName("child");
+        var parentRef = document.getElementsByClassName("parent");
+        var gparentRef = document.getElementsByClassName("Gparent");
+
+        childRef[0].addEventListener("click", f2, true);
+        parentRef[0].addEventListener("click", f3, true);
+        gparentRef[0].addEventListener("click", f4, true);
+      }
+
+      function f2() {
+        alert("Child is called");
+      }
+      function f3() {
+        alert("Parent is called");
+      }
+      function f4() {
+        alert("GParent is called");
+      }
+    </script>
+  </body>
+</html>

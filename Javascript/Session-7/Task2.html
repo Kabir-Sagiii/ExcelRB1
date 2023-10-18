@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function getData() {
+        var inputRef = document.querySelector("input");
+        var p1Ref = document.querySelector("#p1");
+
+        p1Ref.innerText = inputRef.value;
+        // var pRef = document.createElement("p");
+        // pRef.innerText = inputRef.value;
+        // document.querySelector("body").appendChild(pRef);
+        // console.log(inputRef.value);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Task 2</h2>
+    <!-- <input type="text" placeholder="Enter Some Text" onkeydown="getData()" /> -->
+    <input type="text" placeholder="Enter Some Text" />
+    <button>Submit</button>
+    <p id="p1"></p>
+  </body>
+</html>

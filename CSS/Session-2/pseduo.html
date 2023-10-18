@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      button {
+        margin-top: 50px;
+        background-color: green;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+      }
+
+      button:hover {
+        background-color: red;
+      }
+      input:disabled {
+        border: 2px solid red;
+      }
+      input:checked {
+        outline: 2px solid red;
+      }
+      ol :first-child {
+        color: red;
+      }
+      ol :last-child {
+        color: green;
+      }
+      ol :nth-child(3) {
+        color: yellow;
+      }
+      ol :nth-child(4) {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Click Me</button>
+    <input disabled placeholder="Enter Some Name" />
+    <input type="checkbox" />Check It
+
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>REACT</li>
+      <li>Java</li>
+    </ol>
+  </body>
+</html>

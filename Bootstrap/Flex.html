@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .flexcontainer {
+        border: 2px solid black;
+        width: 1000px;
+        height: 400px;
+        margin: 50px auto;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="flexcontainer d-flex flex-row text-white justify-content-start align-items-start"
+    >
+      <div class="bg-primary box order-2">Box 1</div>
+      <div class="bg-secondary box order-3">Box 2</div>
+      <div class="bg-info box order-1">Box 3</div>
+    </div>
+  </body>
+</html>

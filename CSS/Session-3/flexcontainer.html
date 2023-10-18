@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #Rowflexcontainer {
+        display: flex;
+        flex-direction: row;
+        border: 2px solid black;
+        width: 500px;
+        height: 300px;
+      }
+      #Rowreverseflexcontainer {
+        display: flex;
+        flex-direction: row-reverse;
+        border: 2px solid black;
+        width: 500px;
+        height: 300px;
+      }
+      #Columnflexcontainer {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        width: 500px;
+        height: 300px;
+      }
+      #Columnreverseflexcontainer {
+        display: flex;
+        flex-direction: column-reverse;
+        border: 2px solid black;
+        width: 500px;
+        height: 300px;
+      }
+      .box {
+        width: 70px;
+        height: 70px;
+      }
+      .box1 {
+        background-color: lightcoral;
+      }
+      .box2 {
+        background-color: lightgreen;
+      }
+      .box3 {
+        background-color: lightslategray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Row</h2>
+    <div id="Rowflexcontainer">
+      <div class="box box1">Box 1</div>
+
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+    </div>
+    <br />
+    <h2>Row-Reverse</h2>
+    <div id="Rowreverseflexcontainer">
+      <div class="box box1">Box 1</div>
+
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+    </div>
+    <br />
+    <h2>Column</h2>
+    <div id="Columnflexcontainer">
+      <div class="box box1">Box 1</div>
+
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+    </div>
+    <br />
+    <h2>Column-Reverse</h2>
+    <div id="Columnreverseflexcontainer">
+      <div class="box box1">Box 1</div>
+
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+    </div>
+  </body>
+</html>

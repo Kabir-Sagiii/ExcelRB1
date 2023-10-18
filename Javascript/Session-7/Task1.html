@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: lightgoldenrodyellow;
+      }
+      .green {
+        width: 500px;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0 0 10px green;
+        margin: 100px auto;
+        padding: 50px 20px;
+      }
+      .red {
+        width: 500px;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0 0 10px red;
+        margin: 100px auto;
+        padding: 50px 20px;
+      }
+    </style>
+    <script>
+      function showhidepassword() {
+        var inputcoll = document.getElementsByTagName("input");
+        var btnRef = document.querySelector("button");
+        var divRef = document.querySelector("div");
+
+        if (inputcoll[0].type === "password") {
+          inputcoll[0].type = "text";
+          btnRef.innerText = "Hide Password";
+          divRef.classList.remove("green");
+          divRef.classList.add("red");
+        } else {
+          inputcoll[0].type = "password";
+          btnRef.innerText = "Show Password";
+          divRef.classList.remove("red");
+          divRef.classList.add("green");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="green">
+      <h2>Show / Hide Password</h2>
+
+      <input type="password" placeholder="Enter Password" />
+      <button onclick="showhidepassword()">Show Password</button>
+    </div>
+  </body>
+</html>
