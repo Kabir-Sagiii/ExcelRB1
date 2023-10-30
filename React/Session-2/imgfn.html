@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function imageFn() {
+        return (
+          <div>
+            <h2>Raj Verma</h2>
+            <img
+              src="https://i.pinimg.com/originals/fc/1a/3e/fc1a3ebf7e9a0a6d287098908f3c4681.jpg"
+              width="300"
+              height="300"
+            />
+            <h2>Rohan Verma</h2>
+            <img
+              src="https://i.pinimg.com/736x/01/77/1c/01771cc530df6659676d1d141b581784.jpg"
+              width="300"
+              height="300"
+            />
+          </div>
+        );
+      }
+
+      ReactDOM.render(imageFn(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

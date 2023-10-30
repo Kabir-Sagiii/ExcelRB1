@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <head>
+      <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+      <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    </head>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+      var divh1Ref = React.createElement(
+        "div",
+        null,
+        React.createElement("h1", null, "h1 inside Div")
+      );
+
+      ReactDOM.render(divh1Ref, document.getElementById("root"));
+    </script>
+  </body>
+</html>
