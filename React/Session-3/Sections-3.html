@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function CreateSection(props) {
+        // props = {title:"",colorname:"",btnname="HTML"}
+        var divStyle = {
+          backgroundColor: props.colorname,
+          padding: "30px",
+          color: "white",
+          margin: "20px",
+        };
+
+        return (
+          <div style={divStyle}>
+            <h2> {props.title} </h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+              numquam, dolorum deserunt deleniti fuga nisi alias aliquam
+              officiis qui sunt eveniet? Ad repudiandae facere omnis quae
+              tenetur eos ipsa nemo, voluptatum molestias magnam similique sit
+              dolorum culpa praesentium, corrupti repellat. Lorem ipsum dolor,
+              sit amet consectetur adipisicing elit. Maiores numquam, dolorum
+              deserunt deleniti fuga nisi alias aliquam officiis qui sunt
+              eveniet? Ad repudiandae facere omnis quae tenetur eos ipsa nemo,
+              voluptatum molestias magnam similique sit dolorum culpa
+              praesentium, corrupti repellat.
+            </p>
+
+            <button>{props.btnname} Details</button>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <div>
+            <CreateSection
+              title={"HTML"}
+              colorname={"black"}
+              btnname={"HTML"}
+            />
+            <CreateSection title={"CSS"} colorname={"blue"} btnname={"CSS"} />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Main />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

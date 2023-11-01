@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createCard(name, image) {
+        var username = "Rohan Reddy";
+
+        var divStyle = {
+          width: "250px",
+          padding: "15px",
+          boxShadow: "0 0 10px black",
+        };
+
+        return (
+          <div style={divStyle}>
+            <img src={image} width="100%" height="200" />
+            <h2 style={{ color: "green", textAlign: "center" }}>{name} </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              culpa iusto molestias magni, nesciunt nam officia molestiae
+              pariatur vitae esse!
+            </p>
+          </div>
+        );
+      }
+
+      function main() {
+        return (
+          <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+            {createCard(
+              "Rohan Reddy",
+              "https://i.pinimg.com/originals/fc/1a/3e/fc1a3ebf7e9a0a6d287098908f3c4681.jpg"
+            )}
+            {createCard(
+              "Riya Verma",
+              "https://th.bing.com/th/id/OIP.N9PHuYWq9vvYRduYtQBHcQHaLF?pid=ImgDet&w=736&h=1102&rs=1"
+            )}
+            {createCard(
+              "Snehal Jaiswal",
+              "https://th.bing.com/th/id/OIP.IFnwS6GaJl-nbqH9s2wjLAHaJ3?pid=ImgDet&rs=1"
+            )}
+            {createCard(
+              "Raj Sinha",
+              "https://i.pinimg.com/originals/b9/6d/76/b96d764d91fc70d9ee2643ae8bce1ffa.jpg"
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(main(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

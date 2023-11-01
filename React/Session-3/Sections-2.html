@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function CreateSection() {
+        var divStyle = {
+          backgroundColor: "black",
+          padding: "30px",
+          color: "white",
+          margin: "20px",
+        };
+
+        return (
+          <div style={divStyle}>
+            <h2> HTML SECTION </h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores
+              numquam, dolorum deserunt deleniti fuga nisi alias aliquam
+              officiis qui sunt eveniet? Ad repudiandae facere omnis quae
+              tenetur eos ipsa nemo, voluptatum molestias magnam similique sit
+              dolorum culpa praesentium, corrupti repellat. Lorem ipsum dolor,
+              sit amet consectetur adipisicing elit. Maiores numquam, dolorum
+              deserunt deleniti fuga nisi alias aliquam officiis qui sunt
+              eveniet? Ad repudiandae facere omnis quae tenetur eos ipsa nemo,
+              voluptatum molestias magnam similique sit dolorum culpa
+              praesentium, corrupti repellat.
+            </p>
+
+            <button>Details</button>
+          </div>
+        );
+      }
+
+      function Main() {
+        return (
+          <div>
+            <CreateSection />
+            <CreateSection />
+
+            <CreateSection> </CreateSection>
+            <CreateSection> </CreateSection>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Main />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
