@@ -11,6 +11,7 @@ import Electronics from "./components/routing/Nested-Components/Electronics";
 import Jewelery from "./components/routing/Nested-Components/Jewelery";
 import MensClothing from "./components/routing/Nested-Components/MensClothing";
 import WomensClothing from "./components/routing/Nested-Components/WomensClothing";
+import Users from "./components/users/Users";
 import Table from "./components/Table/Table";
 
 import { Route, Routes, Navigate } from "react-router-dom";
@@ -32,6 +33,7 @@ function App() {
         </Route>
 
         <Route path="/" element={<Home />} />
+        <Route path="/users" element={<Users />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>

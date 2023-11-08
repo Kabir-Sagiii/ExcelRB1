@@ -11,9 +11,8 @@ function Nav({ isLoggedIn, setIsLoggedIn }) {
       <div className="menu">
         <Link to="/">Home</Link>
         <Link to="/profile">Profile</Link>
+        <Link to="/users">Users</Link>
         <Link to="/products">Products</Link>
-        <Link to="/axios">Axios</Link>
-        <Link to="/cart">Cart</Link>
       </div>
     </div>
   );
