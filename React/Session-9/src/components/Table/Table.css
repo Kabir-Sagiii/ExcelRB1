@@ -1,0 +1,7 @@
+#table {
+  width: 500px;
+  margin: 30px auto;
+  /* border: 2px solid green; */
+  box-shadow: 0 0 10px green;
+  padding: 10px;
+}

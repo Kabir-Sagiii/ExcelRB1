@@ -1,0 +1,18 @@
+.productcontainer {
+  box-shadow: 0 0 10px black;
+  width: 1100px;
+  height: 400px;
+  margin: 50px auto;
+  display: flex;
+}
+.productcontainer .links {
+  width: 30%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.productcontainer .content {
+  width: 70%;
+}
