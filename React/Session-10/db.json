@@ -1,0 +1,23 @@
+{
+  "results": [
+    {
+      "id": 104,
+      "gender": "male",
+      "name": "Ajay Sadguru",
+      "email": "ajay@gmail.com",
+      "phone": 9978599781
+    },
+    {
+      "id": 105,
+      "gender": "female",
+      "name": "Riya Jaiswal",
+      "email": "riya@gmail.com",
+      "phone": 9978599781
+    }
+  ],
+  "posts": {
+    "id": 101,
+    "message": "India enters into Semi Finals",
+    "host": "India"
+  }
+}

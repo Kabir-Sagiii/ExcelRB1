@@ -1,0 +1,14 @@
+.profilecontainer {
+  display: flex;
+  width: 1000px;
+  height: 400px;
+  box-shadow: 0 0 10px green;
+  margin: 50px auto;
+}
+.profilecontainer .image {
+  width: 30%;
+}
+.profilecontainer .content {
+  width: 70%;
+  padding: 50px;
+}
