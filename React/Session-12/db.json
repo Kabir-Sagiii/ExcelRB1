@@ -1,0 +1,30 @@
+{
+  "results": [
+    {
+      "id": 105,
+      "gender": "female",
+      "name": "Riya Sharma",
+      "email": "riya@gmail.com",
+      "phone": 9978599781
+    },
+    {
+      "name": "Rohani",
+      "email": "rohani@gmail.com",
+      "phone": "7777777777",
+      "gender": "female",
+      "id": 106
+    },
+    {
+      "name": "raj",
+      "email": "raj@gmail.com",
+      "phone": "99999999999",
+      "gender": "male",
+      "id": 107
+    }
+  ],
+  "posts": {
+    "id": 101,
+    "message": "India enters into Semi Finals",
+    "host": "India"
+  }
+}
